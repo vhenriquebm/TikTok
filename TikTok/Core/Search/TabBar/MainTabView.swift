@@ -13,7 +13,7 @@ struct MainTabView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            Text("Feed")
+            FeedView()
                 .tabItem {
                     VStack {
                         Image(systemName: selectedTab == 0 ? "house.fill" : "house")
@@ -21,7 +21,7 @@ struct MainTabView: View {
                         Text("Home")
                     }
                 }
-                .onAppear { selectedTab == 0 }
+                .onAppear { selectedTab = 0 }
                 .tag(0)
             
             Text("Friends")
@@ -32,7 +32,7 @@ struct MainTabView: View {
                         Text("Friends")
                     }
                 }
-                .onAppear { selectedTab == 1 }
+                .onAppear { selectedTab = 1 }
                 .tag(1)
             
             
@@ -47,7 +47,7 @@ struct MainTabView: View {
                         Text("Inbox")
                     }
                 }
-                .onAppear { selectedTab == 3 }
+                .onAppear { selectedTab = 3 }
                 .tag(3)
             
             Text("Profile")
@@ -60,7 +60,7 @@ struct MainTabView: View {
                         Text("Profile")
                     }
                 }
-                .onAppear { selectedTab == 4 }
+                .onAppear { selectedTab = 4 }
                 .tag(4)
         }.tint(.black)
     }

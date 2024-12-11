@@ -12,6 +12,8 @@
 		4233BFDE2CD938E3008FAAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4233BFDD2CD938E3008FAAC7 /* Assets.xcassets */; };
 		4233BFE12CD938E4008FAAC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4233BFE02CD938E4008FAAC7 /* Preview Assets.xcassets */; };
 		4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */; };
+		4233BFFA2CD95642008FAAC7 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF92CD95642008FAAC7 /* FeedView.swift */; };
+		4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		4233BFDD2CD938E3008FAAC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4233BFE02CD938E4008FAAC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		4233BFF92CD95642008FAAC7 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		4233BFF02CD93AC4008FAAC7 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				4233BFF92CD95642008FAAC7 /* FeedView.swift */,
+				4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4233BFFA2CD95642008FAAC7 /* FeedView.swift in Sources */,
+				4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */,
 				4233BFDC2CD938E1008FAAC7 /* ContentView.swift in Sources */,
 				4233BFDA2CD938E1008FAAC7 /* TikTokApp.swift in Sources */,
 				4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */,
