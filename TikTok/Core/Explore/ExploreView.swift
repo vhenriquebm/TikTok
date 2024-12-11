@@ -21,10 +21,10 @@ struct ExploreView: View {
                     
                 }
             }
+            .navigationTitle("Explore")
+            .navigationBarTitleDisplayMode(.inline)
+            .padding(.top)
         }
-        .navigationTitle("Explore")
-        .navigationBarTitleDisplayMode(.inline)
-        .padding(.top)
     }
 }
 
