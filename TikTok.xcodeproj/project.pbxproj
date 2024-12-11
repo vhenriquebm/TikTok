@@ -14,6 +14,8 @@
 		4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */; };
 		4233BFFA2CD95642008FAAC7 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF92CD95642008FAAC7 /* FeedView.swift */; };
 		4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */; };
+		42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F572D0A41B400060A5C /* ExploreView.swift */; };
+		42AA9F5A2D0A41C600060A5C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F592D0A41C600060A5C /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4233BFF92CD95642008FAAC7 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		42AA9F572D0A41B400060A5C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		42AA9F592D0A41C600060A5C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		4233BFE82CD93A59008FAAC7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4233BFF52CD93B05008FAAC7 /* TabBar */,
+				42AA9F562D0A41A500060A5C /* Explore */,
 				4233BFF42CD93AEF008FAAC7 /* Search */,
 				4233BFF32CD93ADC008FAAC7 /* Root */,
 				4233BFF22CD93AD6008FAAC7 /* Profile */,
@@ -184,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				4233BFF62CD93B0A008FAAC7 /* UploadMedia */,
-				4233BFF52CD93B05008FAAC7 /* TabBar */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -202,6 +207,15 @@
 			children = (
 			);
 			path = UploadMedia;
+			sourceTree = "<group>";
+		};
+		42AA9F562D0A41A500060A5C /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				42AA9F572D0A41B400060A5C /* ExploreView.swift */,
+				42AA9F592D0A41C600060A5C /* UserCell.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +292,9 @@
 				4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */,
 				4233BFDC2CD938E1008FAAC7 /* ContentView.swift in Sources */,
 				4233BFDA2CD938E1008FAAC7 /* TikTokApp.swift in Sources */,
+				42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */,
 				4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */,
+				42AA9F5A2D0A41C600060A5C /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
