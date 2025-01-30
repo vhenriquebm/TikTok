@@ -14,10 +14,13 @@
 		4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */; };
 		4233BFFA2CD95642008FAAC7 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFF92CD95642008FAAC7 /* FeedView.swift */; };
 		4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */; };
+		429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */; };
 		42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F572D0A41B400060A5C /* ExploreView.swift */; };
 		42AA9F5A2D0A41C600060A5C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F592D0A41C600060A5C /* UserCell.swift */; };
 		42AA9F5D2D0A4D7700060A5C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F5C2D0A4D7700060A5C /* NotificationsView.swift */; };
 		42AA9F5F2D0A4F5600060A5C /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F5E2D0A4F5600060A5C /* NotificationsCell.swift */; };
+		42AA9F612D0A547200060A5C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F602D0A547200060A5C /* ProfileView.swift */; };
+		42AA9F632D0A576100060A5C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F622D0A576100060A5C /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +32,13 @@
 		4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4233BFF92CD95642008FAAC7 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4233BFFB2CD95D0C008FAAC7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		42AA9F572D0A41B400060A5C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		42AA9F592D0A41C600060A5C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		42AA9F5C2D0A4D7700060A5C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		42AA9F5E2D0A4F5600060A5C /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
+		42AA9F602D0A547200060A5C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		42AA9F622D0A576100060A5C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,9 @@
 		4233BFF22CD93AD6008FAAC7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				42AA9F602D0A547200060A5C /* ProfileView.swift */,
+				42AA9F622D0A576100060A5C /* ProfileHeaderView.swift */,
+				429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -296,7 +305,10 @@
 			files = (
 				4233BFFA2CD95642008FAAC7 /* FeedView.swift in Sources */,
 				4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */,
+				42AA9F632D0A576100060A5C /* ProfileHeaderView.swift in Sources */,
+				42AA9F612D0A547200060A5C /* ProfileView.swift in Sources */,
 				4233BFDC2CD938E1008FAAC7 /* ContentView.swift in Sources */,
+				429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */,
 				4233BFDA2CD938E1008FAAC7 /* TikTokApp.swift in Sources */,
 				42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */,
 				4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */,

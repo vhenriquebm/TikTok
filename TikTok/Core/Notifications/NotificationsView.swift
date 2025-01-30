@@ -16,7 +16,7 @@ struct NotificationsView: View {
                 LazyVStack(spacing: 24) {
                     ForEach(0..<20) { notification in
                         NotificationsCell()
-                            .padding()
+                        
                     }
                 }
             }
@@ -24,7 +24,6 @@ struct NotificationsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top)
         }
-        
     }
 }
 
