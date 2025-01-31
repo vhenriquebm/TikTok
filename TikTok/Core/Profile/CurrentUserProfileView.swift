@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
+    
     var body: some View {
+        
         NavigationStack {
             
             ScrollView {
                 
-                VStack(spacing: 2) {
+                VStack(spacing: 16) {
                     
+                    ProfileHeaderView()
                     
-                    
-                    
+                    PostGridView()
                 }
+                .padding(.top)
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -27,3 +32,5 @@ struct CurrentUserProfileView: View {
 #Preview {
     CurrentUserProfileView()
 }
+
+
