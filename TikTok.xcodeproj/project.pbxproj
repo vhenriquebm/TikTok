@@ -20,6 +20,7 @@
 		429AC2FA2D4C3A4D0055D643 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2F92D4C3A4D0055D643 /* PostGridView.swift */; };
 		429AC2FE2D4C3D770055D643 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2FD2D4C3D720055D643 /* Post.swift */; };
 		429AC3022D4C3DCF0055D643 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC3012D4C3DCC0055D643 /* FeedViewModel.swift */; };
+		429F49522DAB5BF30067D404 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429F49512DAB5BF30067D404 /* AuthenticationFormProtocol.swift */; };
 		42A97CF52D51729E0000B7C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A97CF42D51729E0000B7C7 /* LoginView.swift */; };
 		42A97CF72D5172AB0000B7C7 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A97CF62D5172AB0000B7C7 /* RegistrationView.swift */; };
 		42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA9F572D0A41B400060A5C /* ExploreView.swift */; };
@@ -45,6 +46,7 @@
 		429AC2F92D4C3A4D0055D643 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		429AC2FD2D4C3D720055D643 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		429AC3012D4C3DCC0055D643 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		429F49512DAB5BF30067D404 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 		42A97CF42D51729E0000B7C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		42A97CF62D5172AB0000B7C7 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		42AA9F572D0A41B400060A5C /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -94,9 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				4233BFEC2CD93A7E008FAAC7 /* Utils */,
-				4233BFEB2CD93A78008FAAC7 /* Services */,
-				4233BFEA2CD93A72008FAAC7 /* Models */,
-				4233BFE92CD93A6B008FAAC7 /* Extensions */,
 				4233BFE82CD93A59008FAAC7 /* Core */,
 				4233BFE72CD93A3B008FAAC7 /* App */,
 				4233BFDD2CD938E3008FAAC7 /* Assets.xcassets */,
@@ -126,37 +125,14 @@
 			children = (
 				4233BFF52CD93B05008FAAC7 /* TabBar */,
 				42AA9F562D0A41A500060A5C /* Explore */,
-				4233BFF42CD93AEF008FAAC7 /* Search */,
 				4233BFF32CD93ADC008FAAC7 /* Root */,
 				4233BFF22CD93AD6008FAAC7 /* Profile */,
 				4233BFF12CD93AD1008FAAC7 /* Notifications */,
 				4233BFF02CD93AC4008FAAC7 /* Feed */,
 				4233BFEF2CD93AB7008FAAC7 /* Components */,
-				4233BFEE2CD93AB0008FAAC7 /* Comments */,
 				4233BFED2CD93AAA008FAAC7 /* Authentication */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		4233BFE92CD93A6B008FAAC7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4233BFEA2CD93A72008FAAC7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4233BFEB2CD93A78008FAAC7 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		4233BFEC2CD93A7E008FAAC7 /* Utils */ = {
@@ -170,20 +146,10 @@
 		4233BFED2CD93AAA008FAAC7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				42A97CF32D5172720000B7C7 /* Model */,
-				42A97CF22D5172700000B7C7 /* Protocols */,
-				42A97CF12D51726E0000B7C7 /* Service */,
+				429F49502DAB5BD00067D404 /* Protocols */,
 				42A97CF02D51726C0000B7C7 /* View */,
-				42A97CEF2D51726A0000B7C7 /* ViewModel */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		4233BFEE2CD93AB0008FAAC7 /* Comments */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Comments;
 			sourceTree = "<group>";
 		};
 		4233BFEF2CD93AB7008FAAC7 /* Components */ = {
@@ -232,27 +198,12 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		4233BFF42CD93AEF008FAAC7 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				4233BFF62CD93B0A008FAAC7 /* UploadMedia */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
 		4233BFF52CD93B05008FAAC7 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				4233BFF72CD93B4D008FAAC7 /* MainTabView.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		4233BFF62CD93B0A008FAAC7 /* UploadMedia */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UploadMedia;
 			sourceTree = "<group>";
 		};
 		429AC2F52D4BFB3E0055D643 /* CustomViews */ = {
@@ -304,11 +255,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		42A97CEF2D51726A0000B7C7 /* ViewModel */ = {
+		429F49502DAB5BD00067D404 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				429F49512DAB5BF30067D404 /* AuthenticationFormProtocol.swift */,
 			);
-			path = ViewModel;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		42A97CF02D51726C0000B7C7 /* View */ = {
@@ -318,27 +270,6 @@
 				42A97CF62D5172AB0000B7C7 /* RegistrationView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		42A97CF12D51726E0000B7C7 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		42A97CF22D5172700000B7C7 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		42A97CF32D5172720000B7C7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		42AA9F562D0A41A500060A5C /* Explore */ = {
@@ -430,6 +361,7 @@
 				4233BFDC2CD938E1008FAAC7 /* ContentView.swift in Sources */,
 				429AC3022D4C3DCF0055D643 /* FeedViewModel.swift in Sources */,
 				429AC2FE2D4C3D770055D643 /* Post.swift in Sources */,
+				429F49522DAB5BF30067D404 /* AuthenticationFormProtocol.swift in Sources */,
 				429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */,
 				429AC2FA2D4C3A4D0055D643 /* PostGridView.swift in Sources */,
 				42A97CF52D51729E0000B7C7 /* LoginView.swift in Sources */,

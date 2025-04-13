@@ -54,6 +54,8 @@ struct RegistrationView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
             .padding(.vertical)
+            .disabled(!formIsValid)
+            .opacity(formIsValid ? 1 : 0.7)
             
             Spacer()
             
@@ -73,6 +75,18 @@ struct RegistrationView: View {
             }
         }
         .navigationBarBackButtonHidden()
+    }
+}
+
+//MARK: - AuthenticationFormProtocol
+
+extension RegistrationView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && !fullname.isEmpty
+        && !username.isEmpty
     }
 }
 
