@@ -28,7 +28,7 @@ struct LoginView: View {
                         .textInputAutocapitalization(.never)
                         .modifier(StandardTextFieldModifier())
                     
-                    SecureField("Enter your email", text: $password)
+                    SecureField("Enter your password", text: $password)
                         .modifier(StandardTextFieldModifier())
                     
                     NavigationLink {
