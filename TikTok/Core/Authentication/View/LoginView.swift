@@ -11,11 +11,9 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     @StateObject var viewModel: LoginViewModel
-    private let authenticationService: AuthenticationService
     
-    init(authenticationService: AuthenticationService) {
-        self.authenticationService = authenticationService
-        self._viewModel = StateObject(wrappedValue: LoginViewModel(service: authenticationService))
+    init(viewModel: LoginViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
@@ -100,5 +98,5 @@ extension LoginView: AuthenticationFormProtocol {
 }
 
 #Preview {
-    LoginView(authenticationService: AuthenticationService())
+    LoginView(viewModel: LoginViewModel(service: AuthenticationService()))
 }

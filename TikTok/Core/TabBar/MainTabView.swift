@@ -56,7 +56,7 @@ struct MainTabView: View {
                 .onAppear { selectedTab = 3 }
                 .tag(3)
             
-            CurrentUserProfileView()
+            CurrentUserProfileView(viewModel: CurrentUserProfileViewModel(service: authenticationService))
                 .tabItem {
                     VStack {
                         Image(systemName: selectedTab == 4 ? "person.fill" : "person")

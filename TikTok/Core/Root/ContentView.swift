@@ -24,7 +24,8 @@ struct ContentView: View {
             if viewModel.userSession != nil {
                 MainTabView(authenticationService: authenticationService)
             } else {
-                LoginView(authenticationService: authenticationService)
+                let viewModel = LoginViewModel(service: authenticationService)
+                LoginView(viewModel: viewModel)
             }
         }
     }

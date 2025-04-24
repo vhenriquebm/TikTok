@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
-    @StateObject var viewModel = CurrentUserProfileViewModel(service: AuthenticationService())
+    @StateObject var viewModel: CurrentUserProfileViewModel
+    
+    init(viewModel: CurrentUserProfileViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         
@@ -40,7 +44,7 @@ struct CurrentUserProfileView: View {
 }
 
 #Preview {
-    CurrentUserProfileView()
+    CurrentUserProfileView(viewModel: CurrentUserProfileViewModel(service: AuthenticationService()))
 }
 
 
