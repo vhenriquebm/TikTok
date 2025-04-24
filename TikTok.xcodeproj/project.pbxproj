@@ -43,6 +43,9 @@
 		42990D4E2DB9A64800383439 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D4D2DB9A64800383439 /* AuthenticationService.swift */; };
 		42990D512DB9A98200383439 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D502DB9A98200383439 /* LoginViewModel.swift */; };
 		42990D532DB9AC2D00383439 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D522DB9AC2D00383439 /* RegistrationViewModel.swift */; };
+		42990D572DB9AFC400383439 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D562DB9AFC400383439 /* User.swift */; };
+		42990D592DB9AFE600383439 /* AuthenticationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D582DB9AFE600383439 /* AuthenticationServiceProtocol.swift */; };
+		42990D5B2DB9B27D00383439 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42990D5A2DB9B27D00383439 /* ContentViewModel.swift */; };
 		429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */; };
 		429AC2F72D4BFB5C0055D643 /* UserStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2F62D4BFB5C0055D643 /* UserStackView.swift */; };
 		429AC2FA2D4C3A4D0055D643 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429AC2F92D4C3A4D0055D643 /* PostGridView.swift */; };
@@ -73,6 +76,9 @@
 		42990D4D2DB9A64800383439 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		42990D502DB9A98200383439 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		42990D522DB9AC2D00383439 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		42990D562DB9AFC400383439 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		42990D582DB9AFE600383439 /* AuthenticationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceProtocol.swift; sourceTree = "<group>"; };
+		42990D5A2DB9B27D00383439 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		429AC2F62D4BFB5C0055D643 /* UserStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStackView.swift; sourceTree = "<group>"; };
 		429AC2F92D4C3A4D0055D643 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
@@ -203,10 +209,11 @@
 		4233BFED2CD93AAA008FAAC7 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				42990D552DB9AF8500383439 /* Model */,
+				42990D542DB9AF7800383439 /* Service */,
 				42990D4F2DB9A97500383439 /* ViewModel */,
 				429F49502DAB5BD00067D404 /* Protocols */,
 				42A97CF02D51726C0000B7C7 /* View */,
-				42990D4D2DB9A64800383439 /* AuthenticationService.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				4233BFDB2CD938E1008FAAC7 /* ContentView.swift */,
+				42990D5A2DB9B27D00383439 /* ContentViewModel.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -272,6 +280,22 @@
 				42990D522DB9AC2D00383439 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42990D542DB9AF7800383439 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42990D4D2DB9A64800383439 /* AuthenticationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		42990D552DB9AF8500383439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42990D562DB9AFC400383439 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		429AC2F52D4BFB3E0055D643 /* CustomViews */ = {
@@ -327,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				429F49512DAB5BF30067D404 /* AuthenticationFormProtocol.swift */,
+				42990D582DB9AFE600383439 /* AuthenticationServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -429,6 +454,7 @@
 				429AC2F72D4BFB5C0055D643 /* UserStackView.swift in Sources */,
 				42A97CF72D5172AB0000B7C7 /* RegistrationView.swift in Sources */,
 				4233BFFC2CD95D0C008FAAC7 /* FeedCell.swift in Sources */,
+				42990D592DB9AFE600383439 /* AuthenticationServiceProtocol.swift in Sources */,
 				42E4180B2D5199DC00EF8418 /* StandardTextFieldModifier.swift in Sources */,
 				42990D4E2DB9A64800383439 /* AuthenticationService.swift in Sources */,
 				42AA9F632D0A576100060A5C /* ProfileHeaderView.swift in Sources */,
@@ -436,6 +462,7 @@
 				429AC3022D4C3DCF0055D643 /* FeedViewModel.swift in Sources */,
 				429AC2FE2D4C3D770055D643 /* Post.swift in Sources */,
 				429F49522DAB5BF30067D404 /* AuthenticationFormProtocol.swift in Sources */,
+				42990D5B2DB9B27D00383439 /* ContentViewModel.swift in Sources */,
 				42990D532DB9AC2D00383439 /* RegistrationViewModel.swift in Sources */,
 				429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */,
 				429AC2FA2D4C3A4D0055D643 /* PostGridView.swift in Sources */,
@@ -443,6 +470,7 @@
 				4233BFDA2CD938E1008FAAC7 /* TikTokApp.swift in Sources */,
 				42AA9F582D0A41B400060A5C /* ExploreView.swift in Sources */,
 				4233BFF82CD93B4D008FAAC7 /* MainTabView.swift in Sources */,
+				42990D572DB9AFC400383439 /* User.swift in Sources */,
 				42AA9F5A2D0A41C600060A5C /* UserCell.swift in Sources */,
 				42AA9F5F2D0A4F5600060A5C /* NotificationsCell.swift in Sources */,
 				42AA9F5D2D0A4D7700060A5C /* NotificationsView.swift in Sources */,
