@@ -10,6 +10,12 @@ import SwiftUI
 struct MainTabView: View {
     @State private var selectedTab = 0
     
+    private let authenticationService: AuthenticationService
+    
+    init(authenticationService: AuthenticationService) {
+        self.authenticationService = authenticationService
+    }
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             
@@ -67,5 +73,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(authenticationService: AuthenticationService())
 }

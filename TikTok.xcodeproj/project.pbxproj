@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42200C452D4C479F003006E1 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42200C442D4C479B003006E1 /* CustomVideoPlayer.swift */; };
+		422984012DBAEFF200CC331F /* CurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422984002DBAEFF200CC331F /* CurrentUserProfileViewModel.swift */; };
 		4233BFDA2CD938E1008FAAC7 /* TikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFD92CD938E1008FAAC7 /* TikTokApp.swift */; };
 		4233BFDC2CD938E1008FAAC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233BFDB2CD938E1008FAAC7 /* ContentView.swift */; };
 		4233BFDE2CD938E3008FAAC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4233BFDD2CD938E3008FAAC7 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		42200C442D4C479B003006E1 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		422984002DBAEFF200CC331F /* CurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
 		4233BFD62CD938E1008FAAC7 /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4233BFD92CD938E1008FAAC7 /* TikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokApp.swift; sourceTree = "<group>"; };
 		4233BFDB2CD938E1008FAAC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				42AA9F622D0A576100060A5C /* ProfileHeaderView.swift */,
 				429AC2F32D4BF51A0055D643 /* CurrentUserProfileView.swift */,
+				422984002DBAEFF200CC331F /* CurrentUserProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				429AC2FE2D4C3D770055D643 /* Post.swift in Sources */,
 				429F49522DAB5BF30067D404 /* AuthenticationFormProtocol.swift in Sources */,
 				42990D5B2DB9B27D00383439 /* ContentViewModel.swift in Sources */,
+				422984012DBAEFF200CC331F /* CurrentUserProfileViewModel.swift in Sources */,
 				42990D532DB9AC2D00383439 /* RegistrationViewModel.swift in Sources */,
 				429AC2F42D4BF51A0055D643 /* CurrentUserProfileView.swift in Sources */,
 				429AC2FA2D4C3A4D0055D643 /* PostGridView.swift in Sources */,

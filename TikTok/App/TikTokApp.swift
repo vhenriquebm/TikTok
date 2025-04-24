@@ -23,7 +23,7 @@ struct TikTokApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(authenticationService: AuthenticationService())
         }
     }
 }

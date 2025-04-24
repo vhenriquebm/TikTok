@@ -10,7 +10,7 @@ import FirebaseAuth
 import Combine
 
 protocol AuthenticationServiceProtocol {
-    func login(with email: String, password: String) async throws
+    func login(user: User) async throws
     func create(user: User) async throws
     func signout()
     func updateUserSession()

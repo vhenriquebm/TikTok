@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
+    @StateObject var viewModel = CurrentUserProfileViewModel(service: AuthenticationService())
     
     var body: some View {
         
@@ -25,6 +26,15 @@ struct CurrentUserProfileView: View {
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Sign Out") {
+                        viewModel.signout()
+                    }
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                }
+            }
         }
     }
 }

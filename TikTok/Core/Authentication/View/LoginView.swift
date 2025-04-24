@@ -10,7 +10,13 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
-    @StateObject var viewModel = LoginViewModel(service: AuthenticationService())
+    @StateObject var viewModel: LoginViewModel
+    private let authenticationService: AuthenticationService
+    
+    init(authenticationService: AuthenticationService) {
+        self.authenticationService = authenticationService
+        self._viewModel = StateObject(wrappedValue: LoginViewModel(service: authenticationService))
+    }
     
     var body: some View {
         
@@ -94,5 +100,5 @@ extension LoginView: AuthenticationFormProtocol {
 }
 
 #Preview {
-    LoginView()
+    LoginView(authenticationService: AuthenticationService())
 }

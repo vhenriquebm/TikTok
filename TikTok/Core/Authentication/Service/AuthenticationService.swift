@@ -16,20 +16,27 @@ class AuthenticationService: AuthenticationServiceProtocol {
         self.userSession = Auth.auth().currentUser
     }
     
-    func login(with email: String, password: String) async throws {
-        
+    func login(user: User) async throws {
+        do {
+            let result = try await Auth.auth().signIn(withEmail: user.email, password: user.password)
+            self.userSession = result.user
+        } catch {
+            throw error
+        }
     }
     
     func create(user: User) async throws {
         
         do {
             let result = try await Auth.auth().createUser(withEmail: user.email, password: user.password)
+            self.userSession = result.user
         } catch {
             throw error
         }
     }
     
     func signout() {
-        
+        try? Auth.auth().signOut()
+        self.userSession = nil
     }
 }
