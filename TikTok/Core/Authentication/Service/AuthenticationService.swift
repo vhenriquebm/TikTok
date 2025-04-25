@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
-class AuthenticationService: AuthenticationServiceProtocol {    
+class AuthenticationService: AuthenticationServiceProtocol {
     @Published var userSession: FirebaseAuth.User?
     
     func updateUserSession() {

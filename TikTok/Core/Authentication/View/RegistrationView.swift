@@ -13,7 +13,11 @@ struct RegistrationView: View {
     @State private var fullname = ""
     @State private var username = ""
     @Environment(\.dismiss) var dismiss
-    @StateObject var viewModel = RegistrationViewModel(service: AuthenticationService())
+    @StateObject var viewModel: RegistrationViewModel
+    
+    init(viewModel: RegistrationViewModel) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         VStack {
@@ -98,5 +102,5 @@ extension RegistrationView: AuthenticationFormProtocol {
 }
 
 #Preview {
-    RegistrationView()
+    RegistrationView(viewModel: RegistrationViewModel(service: AuthenticationService()))
 }

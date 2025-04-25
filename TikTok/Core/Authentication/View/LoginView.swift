@@ -71,7 +71,7 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    RegistrationView()
+                    RegistrationView(viewModel: RegistrationViewModel(service: AuthenticationService()))
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don´t have an account?")
