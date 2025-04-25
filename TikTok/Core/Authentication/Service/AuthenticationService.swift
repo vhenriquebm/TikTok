@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class AuthenticationService: AuthenticationServiceProtocol {
     @Published var userSession: FirebaseAuth.User?
+    let userService = UserService()
     
     func updateUserSession() {
         self.userSession = Auth.auth().currentUser
@@ -30,6 +31,7 @@ class AuthenticationService: AuthenticationServiceProtocol {
         do {
             let result = try await Auth.auth().createUser(withEmail: user.email, password: user.password)
             self.userSession = result.user
+            try await self.upload(id: result.user.uid, user: user)
         } catch {
             throw error
         }
@@ -38,5 +40,15 @@ class AuthenticationService: AuthenticationServiceProtocol {
     func signout() {
         try? Auth.auth().signOut()
         self.userSession = nil
+    }
+    
+    func upload(id: String, user: User) async throws {
+        
+        let user = UserData(id: id,
+                            username: user.username,
+                            email: user.email,
+                            fullname: user.fullname)
+        
+        try await userService.upload(user)
     }
 }

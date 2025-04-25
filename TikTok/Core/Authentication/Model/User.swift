@@ -7,9 +7,19 @@
 
 import Foundation
 
-struct User {
+struct User: Decodable {
     let email: String
     let password: String
     let username: String
     let fullname: String
+}
+
+
+struct UserData: Identifiable, Codable {
+    let id: String
+    let username: String
+    let email: String
+    let fullname: String
+    var bio: String?
+    var profileImageUrl: String?
 }
